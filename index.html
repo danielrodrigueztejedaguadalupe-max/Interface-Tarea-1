@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Profesores</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <h2>Formulario</h2>
+    <form method="get" action="archivo.php">
+        <label>Asignaturas:</label>
+        <input type="radio" name="asignatura" value="Programacion"> Programacion
+        <br>
+        <input type="radio" name="asignatura" value="Base de datos"> Base de datos
+        <br>
+        <input type="radio" name="asignatura" value="Lenguaje de marca"> Lenguaje de marca
+        <br>
+        <input type="radio" name="asignatura" value="Entorno de desarollo"> Entorno de desarollo
+        <br>
+        <label>Profesores:</label>
+        <input type="checkbox" value="Luis Miguel Álvarez Recio" name="profesor[]">Luis Miguel Álvarez Recio
+        <br>
+        <input type="checkbox" value="Isabel Muñoz Domínguez" name="profesor[]">Isabel Muñoz Domínguez
+        <br>
+        <input type="checkbox" value="Ernesto González Trives" name="profesor[]">Ernesto González Trives
+        <br>
+        <input type="checkbox" value="Alberto Domínguez Lebrato" name="profesor[]">Alberto Domínguez Lebrato
+        <br>
+
+        <label>Horas:</label>
+        <input type="text" name="horas">
+        <br>
+        <br>
+        <label>Informacion:</label>
+        <textarea name="informacion" rows="5" cols="30"></textarea>
+
+        <button type="submit">Enviar datos</button>
+        <button type="reset">Borrar datos</button>
+    </form>
+</body>
+</html>
